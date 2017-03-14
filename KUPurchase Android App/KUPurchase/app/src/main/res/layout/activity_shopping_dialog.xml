@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivKuProductImage"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTextKuProductName"
+            android:layout_marginTop="5dp"
+            android:text="상품명 : "
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivKuProductImage"/>
+
+        <TextView
+            android:id="@+id/tvKuProductName"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:text="휴지"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvTextKuProductName" />
+
+        <TextView
+            android:id="@+id/tvTextKuProductPrice"
+            android:text="가 격 : "
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTextKuProductName"
+            android:layout_toRightOf="@+id/ivKuProductImage"
+            android:layout_toEndOf="@+id/ivKuProductImage" />
+
+        <TextView
+            android:id="@+id/tvKuProductPrice"
+            android:textSize="15dp"
+            android:text="1000"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvTextKuProductPrice"
+            android:layout_toRightOf="@+id/tvTextKuProductName"
+            android:layout_toEndOf="@+id/tvTextKuProductName" />
+
+        <TextView
+            android:id="@+id/tvTextKuProductPriceWon"
+            android:textSize="15dp"
+            android:text="원"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvKuProductPrice"
+            android:layout_toRightOf="@+id/tvKuProductPrice"
+            android:layout_toEndOf="@+id/tvKuProductPrice"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/tvTextKuProductExpireDate"
+            android:text="구매 만료 날짜 : "
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTextKuProductPrice"
+            android:layout_alignLeft="@+id/tvTextKuProductPrice"
+            android:layout_alignStart="@+id/tvTextKuProductPrice" />
+
+        <TextView
+            android:id="@+id/tvKuProductExpireDate"
+            android:textSize="15dp"
+            android:text="1989-11-04"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvTextKuProductExpireDate"
+            android:layout_toRightOf="@+id/tvTextKuProductExpireDate"
+            android:layout_toEndOf="@+id/tvTextKuProductExpireDate" />
+
+        <TextView
+            android:id="@+id/tvTextKuProductDepositStartDate"
+            android:text="입금 시작 날짜 : "
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvKuProductDepositStartDate"
+            android:layout_toRightOf="@+id/ivKuProductImage"
+            android:layout_toEndOf="@+id/ivKuProductImage" />
+
+        <TextView
+            android:id="@+id/tvKuProductDepositStartDate"
+            android:textSize="15dp"
+            android:text="1989-11-04"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKuProductExpireDate"
+            android:layout_alignLeft="@+id/tvKuProductExpireDate"
+            android:layout_alignStart="@+id/tvKuProductExpireDate" />
+
+        <TextView
+            android:id="@+id/tvTextKuProductDepositDueDate"
+            android:text="입금 종료 날짜 : "
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTextKuProductDepositStartDate"
+            android:layout_toLeftOf="@+id/tvKuProductDepositStartDate"
+            android:layout_toStartOf="@+id/tvKuProductDepositStartDate" />
+
+        <TextView
+            android:id="@+id/tvKuProductDepositDueDate"
+            android:textSize="15dp"
+            android:text="1989-11-04"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTextKuProductDepositDueDate"
+            android:layout_alignBottom="@+id/tvTextKuProductDepositDueDate"
+            android:layout_toRightOf="@+id/tvTextKuProductDepositDueDate"
+            android:layout_toEndOf="@+id/tvTextKuProductDepositDueDate" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bPurchaseKuProduct"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="주문하기" />
+
+        <Button
+            android:id="@+id/bPutToCart"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="장바구니에 넣기" />
+    </LinearLayout>
+
+</LinearLayout>

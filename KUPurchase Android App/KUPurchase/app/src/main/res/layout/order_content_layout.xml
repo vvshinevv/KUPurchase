@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border2"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tvKuProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상품명 : "
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvKuProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상품가격 : "
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvKuProductName"/>
+
+        <TextView
+            android:id="@+id/tvKuProductCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개수 : "
+            android:textSize="15dp"
+            android:layout_below="@+id/tvKuProductPrice"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvKuProductTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금액 : 000\"
+            android:textSize="15dp"
+            android:layout_below="@+id/tvKuProductCount"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvKuProductDepositState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입금상태 :"
+            android:textSize="15dp"
+            android:layout_below="@+id/tvKuProductTotalPrice"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/ivTrashIcon"
+            android:onClick="deleteOrder"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/trash_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

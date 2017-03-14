@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.kupurchase1" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- [END gcm_permission] -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Register.RegisterUserID"
+            android:label="@string/title_activity_register_user_id"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Register.RegisterUserPassword"
+            android:label="@string/title_activity_register_user_password"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Register.RegisterUserPhoneNum"
+            android:label="@string/title_activity_register_user_phone_num"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Register.RegisterUserMailAddress"
+            android:label="@string/title_activity_register_user_mail_address"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Register.RegisterUsername"
+            android:label="@string/title_activity_register_username"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <!-- [START gcm_receiver] GCM을 받기 위한 리시버 -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.user.kupurchase1" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener_service] -->
+        <!-- GCM 메세지가 디바이스로 전송이 되면 메세지를 받아서 처리하는 프로그램을 서비스로 정의 -->
+        <!-- GCM을 받아서 실제 Notification Center에 어떻게 나타나는지를 정의한다. -->
+        <service
+            android:name=".GCMUtils.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener_service] -->
+
+
+        <!-- [START instanceId_listener_service] -->
+        <!-- GCM에서 디바이스를 구분하기 위한 것 -->
+        <service
+            android:name=".GCMUtils.MyInstanceIDListener"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener_service] -->
+
+
+        <!-- [START gcm_registration_service] -->
+        <!-- 실제 디바이스에서 Instance ID를 사용하여 디바이스를 GCM에 등록 -->
+        <service
+            android:name=".GCMUtils.RegistrationIntentService"
+            android:exported="false" >
+        </service>
+        <!-- [END gcm_registration_service] -->
+        <activity
+            android:name=".Purchase.MainPurchaseActivity"
+            android:label="@string/title_activity_main_purchase"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Community.MainCommunityActivity"
+            android:label="@string/title_activity_main_community"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Community.Notification.NotificationContentsActivity"
+            android:label="@string/title_activity_notification_contents"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Purchase.ETCPurchase.RegisterETCProductActivity"
+            android:label="@string/title_activity_register_etcproduct"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".Setting.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Purchase.ETCPurchase.ETCProductContentsActivity"
+            android:label="@string/title_activity_etcproduct_contents"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Purchase.Shopping.ShoppingDialogActivity"
+            android:label="@string/title_activity_shopping_dialog"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".Setting.Message.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Setting.Message.SendMessageActivity"
+            android:label="@string/title_activity_send_message"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CheckPurchase.CheckPurchaseActivity"
+            android:label="@string/title_activity_check_puchase"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Setting.AskAdministrator.AskAdministratorActivity"
+            android:label="@string/title_activity_ask_administrator"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".FullScreenActivity"
+            android:label="@string/title_activity_full_screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Purchase.ETCPurchase.UpdateETCProductActivity"
+            android:label="@string/title_activity_update_etcproduct"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Community.FreeBoard.FreeBoardContentsActivity"
+            android:label="@string/title_activity_freeBoard_contents"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Community.FreeBoard.RegisterFreeBoardActivity"
+            android:label="@string/title_activity_freeBoard_contents"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Community.FreeBoard.UpdateFreeBoardActivity"
+            android:label="@string/title_activity_freeBoard_contents"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Order.OrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

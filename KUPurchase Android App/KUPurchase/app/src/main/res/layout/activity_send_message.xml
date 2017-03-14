@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.user.kupurchase1.Setting.Message.SendMessageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tvBackActivity"
+                android:layout_gravity="center_vertical"
+                android:textColor="#323232"
+                android:text="&lt;"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="BackBeforeActivity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="   쪽지 보내기"
+                android:textColor="#323232"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/tvTextToUserID"
+        android:text="받는 사람 : "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvToUserID"
+            android:text="vvshinevv"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/tvTextToUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etMessageBox"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_box"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_below="@+id/tvTextToUserID"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <Button
+            android:id="@+id/bSendMessage"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="보내기"
+            android:textSize="15dp"
+            android:onClick="SendMessage"
+            android:layout_below="@+id/etMessageBox"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

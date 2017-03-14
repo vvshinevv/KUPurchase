@@ -1,0 +1,110 @@
+table.table1 { 
+	border-collapse: collapse; 
+	margin-left: 4em;
+}
+
+th.table1 {
+	font-family: 'hanna' !important;
+	font-size: 1.3em;
+	border-collapse: collapse;
+	border: 1px solid #8080E6;
+	color: white;
+	padding: 5px;
+	width: 7em;
+}
+
+td.table1 {
+	font-family: 'hanna' !important;
+	font-size: 1.3em;
+	border-collapse: collapse;
+	border: 1px solid #8080E6;
+	color: white;
+	padding: 5px;
+	width: 10em;
+}
+
+table.table2 {
+	border-collapse: collapse; 
+	margin-left: 4em;
+	text-align: center;
+	margin-bottom: 6.5em;
+
+}
+th.table2 {
+	font-family: 'hanna' !important;
+	font-size: 1.0em;
+	border-collapse: collapse;
+	border: 1px solid #808080;
+	color: white;
+	padding: 5px;
+	width: 6.3em;
+	height: 2em;
+	background-color: #808080;
+}
+td.table2 {
+	font-family: 'hanna' !important;
+	font-size: 1.0em;
+	border-collapse: collapse;
+	border: 1px solid #8080E6;
+	color: white;
+	padding: 5px;
+	width: 6em;
+	height: 2em;
+}
+
+p.maintitle {
+	margin-top: 3em;
+	margin-left: 3em;
+	color: #FFFFFF;
+	font-size: 2em;
+	font-family: 'hanna' !important;
+}
+
+p.maintitlesub {
+	margin-top: 3em;
+	margin-left: 3em;
+	color: #87cefa;
+	font-size: 2em;
+	font-family: 'hanna' !important;
+}
+
+#menu{
+
+	position: fixed;
+	right: 1em; top: 15em;
+	width:120px;
+}
+#menu a{	
+	font-family: 'hanna' !important;
+	display:block; 
+	padding:10px 10px 10px 15px;
+	margin-bottom:1px;
+	background-color:#0099FF; 
+	color:#BBB;	
+	font:12px Verdana;
+	text-transform:uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.3em;
+}
+#menu a:hover{
+	padding-left:10px; 
+	border-left:5px solid #b6e24c; 
+	color:#FFF; 
+	opacity: 1.0em;
+	text-decoration: none;
+}
+
+span.hong {
+	font-size: 120%;
+	font-family: 'hanna', sans-serif;
+	line-height: 80%;
+	color: #ff0000;
+}
+
+span.paran {
+	font-size: 120%;
+	font-family: 'hanna', sans-serif;
+	line-height: 80%;
+	color: #0000cd;
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.user.kupurchase1.Setting.AskAdministrator.AskAdministratorActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tvBackActivity"
+                android:textColor="#323232"
+                android:text="&lt;"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="BackSettingActivity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="        문의하기"
+                android:textColor="#323232"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvKakaoTalkID"
+            android:text="카카오톡 아이디: hara"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCall"
+            android:text="총학생회 전화번호 : "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvKakaoTalkID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCallNumber"
+            android:text="010-2632-5301"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvTextAskTitle"
+            android:layout_toRightOf="@+id/tvKakaoTalkID"
+            android:layout_toEndOf="@+id/tvKakaoTalkID" />
+
+        <ImageView
+            android:background="@drawable/call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="CallToAdministrator"
+            android:layout_alignBottom="@+id/tvCallNumber"
+            android:layout_toRightOf="@+id/tvCallNumber"
+            android:layout_toEndOf="@+id/tvCallNumber" />
+
+        <TextView
+            android:id="@+id/tvTextAskTitle"
+            android:text="제 목"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etAskTitle"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tvTextAskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTextAskContents"
+            android:text="내 용"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/etAskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etAskContents"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/message_box"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_below="@+id/tvTextAskContents"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <Button
+            android:id="@+id/bSendMessage"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="보내기"
+            android:textSize="15dp"
+            android:onClick="SendMessage"
+            android:layout_below="@+id/etAskContents"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

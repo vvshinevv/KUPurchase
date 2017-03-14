@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.user.kupurchase1.Community.FreeBoard.FreeBoardContentsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tvBackMainCommunityActivity"
+                android:layout_gravity="center_vertical"
+                android:textColor="#323232"
+                android:text="&lt;"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text=" 자 유 게 시 판"
+                android:textColor="#323232"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTextFreeBoardTitle"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="제 목 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvFreeBoardTitle"
+                android:textSize="15dp"
+                android:text="제목"
+                android:layout_toRightOf="@+id/tvTextFreeBoardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvFreeBoardDate"
+                android:textSize="10dp"
+                android:text="날짜"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFreeBoardCount"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tvFreeBoardCount"
+                android:textSize="10dp"
+                android:text="조회수 : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bDeleteFreeBoardDetail"
+                android:layout_alignRight="@+id/tvFreeBoardDate"
+                android:layout_alignEnd="@+id/tvFreeBoardDate" />
+
+            <ImageView
+                android:id="@+id/ivFreeBoardImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/photo_icon"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/tvTextFreeBoardContents"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvTextFreeBoardContents"
+                android:text="내 용"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTextUserID"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tvTextUserID"
+                android:text="작성자 : "
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTextFreeBoardTitle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tvUserID"
+                android:text="hara"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvTextUserID"
+                android:layout_below="@+id/tvFreeBoardTitle"/>
+
+            <TextView
+                android:id="@+id/tvFreeBoardContents"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ivFreeBoardImage"
+                android:background="#EEEEEE"
+                android:textSize="15dp"
+                android:text="내용"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bSendMessage"
+                android:text="쪽지 보내기"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/bDeleteFreeBoardDetail"
+                android:text="삭제"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/bUpdateFreeBoardDetail"
+                android:text="수정"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/bDeleteFreeBoardDetail"
+                android:layout_toStartOf="@+id/bDeleteFreeBoardDetail" />
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/card_recycler_view"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

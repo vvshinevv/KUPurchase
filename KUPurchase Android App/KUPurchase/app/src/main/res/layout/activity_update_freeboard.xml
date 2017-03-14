@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.user.kupurchase1.Community.FreeBoard.RegisterFreeBoardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/tvBackMainCommunityActivity"
+                android:layout_gravity="center_vertical"
+                android:textColor="#323232"
+                android:text="&lt;"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="BackMainActivity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:text=" 자 유 게 시 판"
+                android:textColor="#323232"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvUpdateFreeBoard"
+                android:text="수정"
+                android:textSize="15dp"
+                android:textColor="#323232"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="5dp"
+        android:id="@+id/view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etFreeBoardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제 목"
+                android:gravity="left"
+                android:singleLine="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/ivFreeBoardSelectionImage"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/ivFreeBoardSelectionImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"
+                android:background="@drawable/photo_icon"
+                android:layout_alignTop="@+id/etFreeBoardTitle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/ivFreeBoardImage"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/photo_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etFreeBoardTitle" />
+
+            <ImageView
+                android:id="@+id/ivFreeBoardNewImage"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etFreeBoardTitle" />
+
+
+            <EditText
+                android:id="@+id/etFreeBoardContents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message_box"
+                android:hint="세 부 내 용"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ivFreeBoardNewImage" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout_focus"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

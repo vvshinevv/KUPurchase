@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">KUPurchase1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register_user_id">RegisterUserID</string>
+    <string name="title_activity_register_user_password">RegisterUserPassword</string>
+    <string name="title_activity_register_user_phone_num">RegisterUserPhoneNum</string>
+    <string name="title_activity_register_user_mail_address">RegisterUserMailAddress</string>
+
+    <string name="err_msg_username">이름을 입력하세요.</string>
+    <string name="err_msg_userPhoneNum">전화번호를 확인하세요.</string>
+    <string name="err_msg_userPassword">비밀번호를 입력하세요</string>
+    <string name="err_msg_userConfirmPassword">일치하지 않습니다.</string>
+    <string name="err_msg_userID">아이디를 입력하세요.</string>
+    <string name="err_msg_userMailAddress">이메일을 입력하세요</string>
+    <string name="err_msg_etc_product_title">제목을 입력하세요</string>
+    <string name="err_msg_etc_product_date">날짜를 입력하세요</string>
+    <string name="err_msg_etc_product_contents">내용을 입력하세요</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="regulation_title">이용약관</string>
+    <string name="regulation">
+        - 이후 이용약관 내용을 띄웁니다.\n\n
+        - 이 글은 테스트글입니다.\n\n
+        - 스크롤 뷰가 제대로 작동하는지 테스트합니다.\n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - 마지막 글씨입니다. \n\n
+        - 제대로 작동되네요. \n\n
+    </string>
+
+    <string name="personal_regulation_title">개인정보취급방침</string>
+    <string name="personal_regulation">
+        - 이후 개인정보취급방침 내용을 띄웁니다.\n\n
+        - 이 글은 테스트글입니다.\n\n
+        - 스크롤 뷰가 제대로 작동하는지 테스트합니다.\n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - \n\n
+        - 마지막 글씨입니다. \n\n
+        - 제대로 작동되네요. \n\n
+    </string>
+    <string name="title_activity_register_username">RegisterUsername</string>
+    <string name="gcm_defaultSenderId">114160821148</string>
+    <string name="registering_message_ready">InstanceID 토큰 가져오기</string>
+    <string name="registering_message_generating">InstanceID 토큰 생성중...</string>
+    <string name="registering_message_complete">완료!</string>
+    <string name="title_activity_main_puchase">MainPuchaseActivity</string>
+    <string name="title_activity_main_purchase">MainPurchaseActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_main_community">MainCommunityActivity</string>
+    <string name="title_activity_notification_contents">NotificationContentsActivity</string>
+    <string name="title_activity_register_etcproduct">RegisterETCProductActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_etcproduct_contents">ETCProductContentsActivity</string>
+    <string name="title_activity_shopping_dialog">ShoppingDialogActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_send_message">SendMessageActivity</string>
+    <string name="title_activity_check_puchase">CheckPuchaseActivity</string>
+    <string name="title_activity_ask_administor">AskAdministorActivity</string>
+    <string name="title_activity_ask_administrator">AskAdministratorActivity</string>
+    <string name="title_activity_full_screen">FullScreenActivity</string>
+    <string name="title_activity_update_etcproduct">UpdateETCProductActivity</string>
+    <string name="title_activity_freeBoard_contents">FreeBoardContentsActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
+</resources>
